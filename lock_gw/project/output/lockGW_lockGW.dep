@@ -1,67 +1,78 @@
 Dependencies for Project 'lockGW', Target 'lockGW': (DO NOT MODIFY !)
-F (..\user\main.c)(0x5A33BE14)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\APP\inc -I..\Lib\STM32_ETH_Driver\inc-I E:\Co_lander\gate_control\colander.lockcontrol\code\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\main.o --omf_browse .\output\main.crf --depend .\output\main.d)
+F (..\user\main.c)(0x5AC9BC8A)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\main.o --omf_browse .\output\main.crf --depend .\output\main.d)
 I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
 I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
 I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
-I (..\user\stm32f10x_conf.h)(0x5A0AD471)
+I (..\user\stm32f10x_conf.h)(0x5AC443F4)
 I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_flash.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
 I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_usart.h)(0x56EC3142)
 I (..\Lib\inc\misc.h)(0x56EC3142)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\string.h)(0x5475F300)
-I (..\APP\inc\GlobalVar.h)(0x5A0AD5D1)
+I (..\app\inc\GlobalVar.h)(0x5A0AD5D1)
 I (..\Drivers\inc\usart.h)(0x5A33BE14)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdio.h)(0x5475F300)
 I (..\Drivers\inc\Delay.h)(0x56FD0CD2)
 I (..\Drivers\inc\led.h)(0x5A30CB1D)
-I (..\Drivers\inc\sx1276.h)(0x5A320D62)
+I (..\Drivers\inc\sx1276.h)(0x5AA76B01)
 I (..\Drivers\inc\spi.h)(0x5A0933F3)
 I (..\user\driversInit.h)(0x5A2F7A84)
-I (..\Drivers\inc\ethernet.h)(0x5A33BE2F)
-I (..\user\process.h)(0x5A0AD6A2)
-F (..\user\stm32f10x_it.c)(0x5A31196E)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\APP\inc -I..\Lib\STM32_ETH_Driver\inc-I E:\Co_lander\gate_control\colander.lockcontrol\code\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\stm32f10x_it.o --omf_browse .\output\stm32f10x_it.crf --depend .\output\stm32f10x_it.d)
+I (..\Drivers\inc\ethernet.h)(0x5AB85CE4)
+I (..\user\process.h)(0x5AC44811)
+I (..\Modules\aes\aes.h)(0x5A9FA988)
+I (..\Lib\inc\main.h)(0x5ABD9E39)
+I (..\user\lora_com.h)(0x5AB45380)
+I (..\user\temp.h)(0x5AB45602)
+I (..\Drivers\inc\button.h)(0x5AC44A0B)
+I (..\Drivers\inc\flash.h)(0x5AC44427)
+F (..\user\stm32f10x_it.c)(0x5AC432EB)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\stm32f10x_it.o --omf_browse .\output\stm32f10x_it.crf --depend .\output\stm32f10x_it.d)
 I (..\user\stm32f10x_it.h)(0x56EC3142)
 I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
 I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
 I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
-I (..\user\stm32f10x_conf.h)(0x5A0AD471)
+I (..\user\stm32f10x_conf.h)(0x5AC443F4)
 I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_flash.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
 I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_usart.h)(0x56EC3142)
 I (..\Lib\inc\misc.h)(0x56EC3142)
-I (..\Drivers\inc\sx1276.h)(0x5A320D62)
+I (..\Drivers\inc\sx1276.h)(0x5AA76B01)
 I (..\Drivers\inc\spi.h)(0x5A0933F3)
 I (..\Drivers\inc\led.h)(0x5A30CB1D)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdio.h)(0x5475F300)
-F (..\user\system_stm32f10x.c)(0x56EC3142)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\APP\inc -I..\Lib\STM32_ETH_Driver\inc-I E:\Co_lander\gate_control\colander.lockcontrol\code\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\system_stm32f10x.o --omf_browse .\output\system_stm32f10x.crf --depend .\output\system_stm32f10x.d)
+I (..\Drivers\inc\button.h)(0x5AC44A0B)
+F (..\user\system_stm32f10x.c)(0x56EC3142)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\system_stm32f10x.o --omf_browse .\output\system_stm32f10x.crf --depend .\output\system_stm32f10x.d)
 I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
 I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
 I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
-I (..\user\stm32f10x_conf.h)(0x5A0AD471)
+I (..\user\stm32f10x_conf.h)(0x5AC443F4)
 I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_flash.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
 I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_usart.h)(0x56EC3142)
 I (..\Lib\inc\misc.h)(0x56EC3142)
-F (..\user\driversInit.c)(0x5A2F7ADF)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\APP\inc -I..\Lib\STM32_ETH_Driver\inc-I E:\Co_lander\gate_control\colander.lockcontrol\code\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\driversinit.o --omf_browse .\output\driversinit.crf --depend .\output\driversinit.d)
+F (..\user\driversInit.c)(0x5AB88689)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\driversinit.o --omf_browse .\output\driversinit.crf --depend .\output\driversinit.d)
 I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
 I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
 I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
-I (..\user\stm32f10x_conf.h)(0x5A0AD471)
+I (..\user\stm32f10x_conf.h)(0x5AC443F4)
 I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_flash.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
 I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
@@ -70,20 +81,21 @@ I (..\Lib\inc\misc.h)(0x56EC3142)
 I (..\Drivers\inc\usart.h)(0x5A33BE14)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdio.h)(0x5475F300)
 I (..\Drivers\inc\led.h)(0x5A30CB1D)
-I (..\APP\inc\GlobalVar.h)(0x5A0AD5D1)
+I (..\app\inc\GlobalVar.h)(0x5A0AD5D1)
 I (..\user\driversInit.h)(0x5A2F7A84)
 I (..\Drivers\inc\spi.h)(0x5A0933F3)
-I (..\Drivers\inc\sx1276.h)(0x5A320D62)
-I (..\Drivers\inc\ethernet.h)(0x5A33BE2F)
-F (..\user\process.c)(0x5A33BF58)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\APP\inc -I..\Lib\STM32_ETH_Driver\inc-I E:\Co_lander\gate_control\colander.lockcontrol\code\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\process.o --omf_browse .\output\process.crf --depend .\output\process.d)
-I (..\user\process.h)(0x5A0AD6A2)
+I (..\Drivers\inc\sx1276.h)(0x5AA76B01)
+I (..\Drivers\inc\ethernet.h)(0x5AB85CE4)
+F (..\user\process.c)(0x5AC448B2)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\process.o --omf_browse .\output\process.crf --depend .\output\process.d)
+I (..\user\process.h)(0x5AC44811)
 I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
 I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
 I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
-I (..\user\stm32f10x_conf.h)(0x5A0AD471)
+I (..\user\stm32f10x_conf.h)(0x5AC443F4)
 I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_flash.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
 I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
@@ -91,70 +103,180 @@ I (..\Lib\inc\stm32f10x_usart.h)(0x56EC3142)
 I (..\Lib\inc\misc.h)(0x56EC3142)
 I (..\Drivers\inc\usart.h)(0x5A33BE14)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\Drivers\inc\ethernet.h)(0x5A33BE2F)
-I (..\Drivers\inc\sx1276.h)(0x5A320D62)
+I (..\Drivers\inc\ethernet.h)(0x5AB85CE4)
+I (..\Drivers\inc\sx1276.h)(0x5AA76B01)
 I (..\Drivers\inc\spi.h)(0x5A0933F3)
-F (..\Lib\cmsis\core_cm3.c)(0x56EC3142)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\APP\inc -I..\Lib\STM32_ETH_Driver\inc-I E:\Co_lander\gate_control\colander.lockcontrol\code\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\core_cm3.o --omf_browse .\output\core_cm3.crf --depend .\output\core_cm3.d)
+I (..\Drivers\inc\delay.h)(0x56FD0CD2)
+I (D:\Developer tools\mdk5\ARM\ARMCC\include\string.h)(0x5475F300)
+I (..\app\inc\schd.h)(0x5A607637)
+I (..\user\lora_com.h)(0x5AB45380)
+I (..\Lib\inc\main.h)(0x5ABD9E39)
+I (..\Drivers\inc\flash.h)(0x5AC44427)
+F (..\Modules\aes\aes.c)(0x5A9FB671)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\aes.o --omf_browse .\output\aes.crf --depend .\output\aes.d)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-F (..\Lib\src\stm32f10x_gpio.c)(0x56EC3142)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\APP\inc -I..\Lib\STM32_ETH_Driver\inc-I E:\Co_lander\gate_control\colander.lockcontrol\code\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\stm32f10x_gpio.o --omf_browse .\output\stm32f10x_gpio.crf --depend .\output\stm32f10x_gpio.d)
+I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\Modules\aes\aes.h)(0x5A9FA988)
+F (..\user\lora_com.c)(0x5AA90707)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\lora_com.o --omf_browse .\output\lora_com.crf --depend .\output\lora_com.d)
+I (..\user\lora_com.h)(0x5AB45380)
+I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
+I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
+I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
+I (..\user\stm32f10x_conf.h)(0x5AC443F4)
+I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_flash.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
+I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_usart.h)(0x56EC3142)
+I (..\Lib\inc\misc.h)(0x56EC3142)
+I (D:\Developer tools\mdk5\ARM\ARMCC\include\string.h)(0x5475F300)
+I (..\Drivers\inc\sx1276.h)(0x5AA76B01)
+I (..\Drivers\inc\spi.h)(0x5A0933F3)
+I (..\app\inc\GlobalVar.h)(0x5A0AD5D1)
+I (..\user\process.h)(0x5AC44811)
+I (..\Drivers\inc\led.h)(0x5A30CB1D)
+I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdio.h)(0x5475F300)
+F (..\user\temp.c)(0x5AB4553B)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\temp.o --omf_browse .\output\temp.crf --depend .\output\temp.d)
+I (..\user\temp.h)(0x5AB45602)
+I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
+I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
+I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
+I (..\user\stm32f10x_conf.h)(0x5AC443F4)
+I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_flash.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
+I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_usart.h)(0x56EC3142)
+I (..\Lib\inc\misc.h)(0x56EC3142)
+I (..\Modules\aes\aes.h)(0x5A9FA988)
+I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdio.h)(0x5475F300)
+F (..\Lib\cmsis\core_cm3.c)(0x56EC3142)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\core_cm3.o --omf_browse .\output\core_cm3.crf --depend .\output\core_cm3.d)
+I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+F (..\Lib\src\stm32f10x_gpio.c)(0x56EC3142)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\stm32f10x_gpio.o --omf_browse .\output\stm32f10x_gpio.crf --depend .\output\stm32f10x_gpio.d)
 I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
 I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
 I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
 I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
-I (..\user\stm32f10x_conf.h)(0x5A0AD471)
+I (..\user\stm32f10x_conf.h)(0x5AC443F4)
 I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_flash.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_usart.h)(0x56EC3142)
 I (..\Lib\inc\misc.h)(0x56EC3142)
-F (..\Lib\src\stm32f10x_rcc.c)(0x56EC3142)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\APP\inc -I..\Lib\STM32_ETH_Driver\inc-I E:\Co_lander\gate_control\colander.lockcontrol\code\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\stm32f10x_rcc.o --omf_browse .\output\stm32f10x_rcc.crf --depend .\output\stm32f10x_rcc.d)
+F (..\Lib\src\stm32f10x_rcc.c)(0x56EC3142)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\stm32f10x_rcc.o --omf_browse .\output\stm32f10x_rcc.crf --depend .\output\stm32f10x_rcc.d)
 I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
 I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
 I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
 I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
-I (..\user\stm32f10x_conf.h)(0x5A0AD471)
+I (..\user\stm32f10x_conf.h)(0x5AC443F4)
 I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_flash.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
 I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_usart.h)(0x56EC3142)
 I (..\Lib\inc\misc.h)(0x56EC3142)
-F (..\Lib\src\stm32f10x_usart.c)(0x56EC3142)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\APP\inc -I..\Lib\STM32_ETH_Driver\inc-I E:\Co_lander\gate_control\colander.lockcontrol\code\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\stm32f10x_usart.o --omf_browse .\output\stm32f10x_usart.crf --depend .\output\stm32f10x_usart.d)
+F (..\Lib\src\stm32f10x_usart.c)(0x56EC3142)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\stm32f10x_usart.o --omf_browse .\output\stm32f10x_usart.crf --depend .\output\stm32f10x_usart.d)
 I (..\Lib\inc\stm32f10x_usart.h)(0x56EC3142)
 I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
 I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
 I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
-I (..\user\stm32f10x_conf.h)(0x5A0AD471)
+I (..\user\stm32f10x_conf.h)(0x5AC443F4)
 I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_flash.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
 I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
 I (..\Lib\inc\misc.h)(0x56EC3142)
-F (..\Lib\src\misc.c)(0x5A2F7A84)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\APP\inc -I..\Lib\STM32_ETH_Driver\inc-I E:\Co_lander\gate_control\colander.lockcontrol\code\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\misc.o --omf_browse .\output\misc.crf --depend .\output\misc.d)
+F (..\Lib\src\misc.c)(0x5A2F7A84)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\misc.o --omf_browse .\output\misc.crf --depend .\output\misc.d)
 I (..\Lib\inc\misc.h)(0x56EC3142)
 I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
 I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
 I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
-I (..\user\stm32f10x_conf.h)(0x5A0AD471)
+I (..\user\stm32f10x_conf.h)(0x5AC443F4)
 I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_flash.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
 I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_usart.h)(0x56EC3142)
-F (..\Lib\src\stm32f10x_spi.c)(0x56EC3142)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\APP\inc -I..\Lib\STM32_ETH_Driver\inc-I E:\Co_lander\gate_control\colander.lockcontrol\code\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\stm32f10x_spi.o --omf_browse .\output\stm32f10x_spi.crf --depend .\output\stm32f10x_spi.d)
+F (..\Lib\src\stm32f10x_spi.c)(0x56EC3142)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\stm32f10x_spi.o --omf_browse .\output\stm32f10x_spi.crf --depend .\output\stm32f10x_spi.d)
 I (..\Lib\inc\stm32f10x_spi.h)(0x56EC3142)
 I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
 I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
 I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
-I (..\user\stm32f10x_conf.h)(0x5A0AD471)
+I (..\user\stm32f10x_conf.h)(0x5AC443F4)
+I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_flash.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
+I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_usart.h)(0x56EC3142)
+I (..\Lib\inc\misc.h)(0x56EC3142)
+F (..\lib\src\stm32f10x_exti.c)(0x56EC3142)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\stm32f10x_exti.o --omf_browse .\output\stm32f10x_exti.crf --depend .\output\stm32f10x_exti.d)
+I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
+I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
+I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
+I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
+I (..\user\stm32f10x_conf.h)(0x5AC443F4)
+I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_flash.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
+I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_usart.h)(0x56EC3142)
+I (..\Lib\inc\misc.h)(0x56EC3142)
+F (..\lib\src\stm32f10x_dma.c)(0x56EC3142)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\stm32f10x_dma.o --omf_browse .\output\stm32f10x_dma.crf --depend .\output\stm32f10x_dma.d)
+I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
+I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
+I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
+I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
+I (..\user\stm32f10x_conf.h)(0x5AC443F4)
+I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_flash.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
+I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_usart.h)(0x56EC3142)
+I (..\Lib\inc\misc.h)(0x56EC3142)
+F (..\lib\src\stm32f10x_iwdg.c)(0x56EC3142)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\stm32f10x_iwdg.o --omf_browse .\output\stm32f10x_iwdg.crf --depend .\output\stm32f10x_iwdg.d)
+I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
+I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
+I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
+I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
+I (..\user\stm32f10x_conf.h)(0x5AC443F4)
+I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_flash.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
+I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_usart.h)(0x56EC3142)
+I (..\Lib\inc\misc.h)(0x56EC3142)
+F (..\lib\src\stm32f10x_flash.c)(0x56EC3142)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\stm32f10x_flash.o --omf_browse .\output\stm32f10x_flash.crf --depend .\output\stm32f10x_flash.d)
+I (..\Lib\inc\stm32f10x_flash.h)(0x56EC3142)
+I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
+I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
+I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
+I (..\user\stm32f10x_conf.h)(0x5AC443F4)
 I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
@@ -162,69 +284,32 @@ I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_usart.h)(0x56EC3142)
 I (..\Lib\inc\misc.h)(0x56EC3142)
-F (..\lib\src\stm32f10x_exti.c)(0x56EC3142)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\APP\inc -I..\Lib\STM32_ETH_Driver\inc-I E:\Co_lander\gate_control\colander.lockcontrol\code\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\stm32f10x_exti.o --omf_browse .\output\stm32f10x_exti.crf --depend .\output\stm32f10x_exti.d)
-I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
+F (..\lib\startup\arm\startup_stm32f10x_cl.s)(0x5A2E7294)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"--pd "__UVISION_VERSION SETA 514" --pd "STM32F10X_CL SETA 1"--list .\startup_stm32f10x_cl.lst --xref -o .\output\startup_stm32f10x_cl.o --depend .\output\startup_stm32f10x_cl.d)
+F (..\Drivers\src\Delay.c)(0x577B62E4)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\delay.o --omf_browse .\output\delay.crf --depend .\output\delay.d)
 I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
 I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
 I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
-I (..\user\stm32f10x_conf.h)(0x5A0AD471)
-I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
-I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
-I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
-I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
-I (..\Lib\inc\stm32f10x_usart.h)(0x56EC3142)
-I (..\Lib\inc\misc.h)(0x56EC3142)
-F (..\lib\src\stm32f10x_dma.c)(0x56EC3142)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\APP\inc -I..\Lib\STM32_ETH_Driver\inc-I E:\Co_lander\gate_control\colander.lockcontrol\code\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\stm32f10x_dma.o --omf_browse .\output\stm32f10x_dma.crf --depend .\output\stm32f10x_dma.d)
-I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
-I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
-I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
-I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
-I (..\user\stm32f10x_conf.h)(0x5A0AD471)
-I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
-I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
-I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
-I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
-I (..\Lib\inc\stm32f10x_usart.h)(0x56EC3142)
-I (..\Lib\inc\misc.h)(0x56EC3142)
-F (..\lib\src\stm32f10x_iwdg.c)(0x56EC3142)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\APP\inc -I..\Lib\STM32_ETH_Driver\inc-I E:\Co_lander\gate_control\colander.lockcontrol\code\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\stm32f10x_iwdg.o --omf_browse .\output\stm32f10x_iwdg.crf --depend .\output\stm32f10x_iwdg.d)
-I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
-I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
-I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
-I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
-I (..\user\stm32f10x_conf.h)(0x5A0AD471)
+I (..\user\stm32f10x_conf.h)(0x5AC443F4)
 I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
-I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
-I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
-I (..\Lib\inc\stm32f10x_usart.h)(0x56EC3142)
-I (..\Lib\inc\misc.h)(0x56EC3142)
-F (..\lib\startup\arm\startup_stm32f10x_cl.s)(0x5A2E7294)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I E:\Co_lander\gate_control\colander.lockcontrol\code\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"--pd "__UVISION_VERSION SETA 514" --pd "STM32F10X_CL SETA 1"--list .\startup_stm32f10x_cl.lst --xref -o .\output\startup_stm32f10x_cl.o --depend .\output\startup_stm32f10x_cl.d)
-F (..\Drivers\src\Delay.c)(0x577B62E4)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\APP\inc -I..\Lib\STM32_ETH_Driver\inc-I E:\Co_lander\gate_control\colander.lockcontrol\code\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\delay.o --omf_browse .\output\delay.crf --depend .\output\delay.d)
-I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
-I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
-I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
-I (..\user\stm32f10x_conf.h)(0x5A0AD471)
-I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
-I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_flash.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
 I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_usart.h)(0x56EC3142)
 I (..\Lib\inc\misc.h)(0x56EC3142)
 I (..\Drivers\inc\Delay.h)(0x56FD0CD2)
-F (..\drivers\src\usart.c)(0x5A2E2D84)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\APP\inc -I..\Lib\STM32_ETH_Driver\inc-I E:\Co_lander\gate_control\colander.lockcontrol\code\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\usart.o --omf_browse .\output\usart.crf --depend .\output\usart.d)
-I (..\APP\inc\GlobalVar.h)(0x5A0AD5D1)
+F (..\drivers\src\usart.c)(0x5A2E2D84)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\usart.o --omf_browse .\output\usart.crf --depend .\output\usart.d)
+I (..\app\inc\GlobalVar.h)(0x5A0AD5D1)
 I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
 I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
 I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
-I (..\user\stm32f10x_conf.h)(0x5A0AD471)
+I (..\user\stm32f10x_conf.h)(0x5AC443F4)
 I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_flash.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
 I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
@@ -232,67 +317,72 @@ I (..\Lib\inc\stm32f10x_usart.h)(0x56EC3142)
 I (..\Lib\inc\misc.h)(0x56EC3142)
 I (..\Drivers\inc\usart.h)(0x5A33BE14)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\Drivers\inc\ethernet.h)(0x5A33BE2F)
-F (..\drivers\src\led.c)(0x5A30CB12)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\APP\inc -I..\Lib\STM32_ETH_Driver\inc-I E:\Co_lander\gate_control\colander.lockcontrol\code\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\led.o --omf_browse .\output\led.crf --depend .\output\led.d)
+I (..\Drivers\inc\ethernet.h)(0x5AB85CE4)
+F (..\drivers\src\led.c)(0x5A30CB12)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\led.o --omf_browse .\output\led.crf --depend .\output\led.d)
 I (..\Drivers\inc\led.h)(0x5A30CB1D)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdio.h)(0x5475F300)
 I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
 I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
 I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
-I (..\user\stm32f10x_conf.h)(0x5A0AD471)
+I (..\user\stm32f10x_conf.h)(0x5AC443F4)
 I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_flash.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
 I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_usart.h)(0x56EC3142)
 I (..\Lib\inc\misc.h)(0x56EC3142)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\string.h)(0x5475F300)
-F (..\drivers\src\SPI.c)(0x5A2F6ABF)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\APP\inc -I..\Lib\STM32_ETH_Driver\inc-I E:\Co_lander\gate_control\colander.lockcontrol\code\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\spi.o --omf_browse .\output\spi.crf --depend .\output\spi.d)
+F (..\drivers\src\SPI.c)(0x5A2F6ABF)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\spi.o --omf_browse .\output\spi.crf --depend .\output\spi.d)
 I (..\Lib\inc\stm32f10x_spi.h)(0x56EC3142)
 I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
 I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
 I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
-I (..\user\stm32f10x_conf.h)(0x5A0AD471)
+I (..\user\stm32f10x_conf.h)(0x5AC443F4)
 I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_flash.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
 I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_usart.h)(0x56EC3142)
 I (..\Lib\inc\misc.h)(0x56EC3142)
 I (..\Drivers\inc\spi.h)(0x5A0933F3)
-F (..\drivers\src\SX1276.C)(0x5A338533)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\APP\inc -I..\Lib\STM32_ETH_Driver\inc-I E:\Co_lander\gate_control\colander.lockcontrol\code\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\sx1276.o --omf_browse .\output\sx1276.crf --depend .\output\sx1276.d)
-I (..\Drivers\inc\sx1276.h)(0x5A320D62)
+F (..\drivers\src\SX1276.C)(0x5AB9BF64)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\sx1276.o --omf_browse .\output\sx1276.crf --depend .\output\sx1276.d)
+I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
 I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
 I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
 I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
-I (..\user\stm32f10x_conf.h)(0x5A0AD471)
+I (..\user\stm32f10x_conf.h)(0x5AC443F4)
 I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
-I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_flash.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
 I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_usart.h)(0x56EC3142)
 I (..\Lib\inc\misc.h)(0x56EC3142)
+I (..\Drivers\inc\sx1276.h)(0x5AA76B01)
 I (..\Drivers\inc\spi.h)(0x5A0933F3)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\string.h)(0x5475F300)
-I (..\APP\inc\GlobalVar.h)(0x5A0AD5D1)
+I (..\app\inc\GlobalVar.h)(0x5A0AD5D1)
 I (..\Drivers\inc\usart.h)(0x5A33BE14)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdio.h)(0x5475F300)
 I (..\Drivers\inc\delay.h)(0x56FD0CD2)
-F (..\drivers\src\Ethernet.c)(0x5A33BF11)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\APP\inc -I..\Lib\STM32_ETH_Driver\inc-I E:\Co_lander\gate_control\colander.lockcontrol\code\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\ethernet.o --omf_browse .\output\ethernet.crf --depend .\output\ethernet.d)
-I (..\Drivers\inc\ethernet.h)(0x5A33BE2F)
+I (..\user\lora_com.h)(0x5AB45380)
+F (..\drivers\src\Ethernet.c)(0x5AC44896)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\ethernet.o --omf_browse .\output\ethernet.crf --depend .\output\ethernet.d)
+I (..\Drivers\inc\ethernet.h)(0x5AB85CE4)
 I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
 I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
 I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
-I (..\user\stm32f10x_conf.h)(0x5A0AD471)
+I (..\user\stm32f10x_conf.h)(0x5AC443F4)
 I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_flash.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
 I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
@@ -301,23 +391,57 @@ I (..\Lib\inc\misc.h)(0x56EC3142)
 I (..\Drivers\inc\usart.h)(0x5A33BE14)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdio.h)(0x5475F300)
 I (..\Drivers\inc\delay.h)(0x56FD0CD2)
-F (..\app\src\schd.c)(0x57F60B1B)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\APP\inc -I..\Lib\STM32_ETH_Driver\inc-I E:\Co_lander\gate_control\colander.lockcontrol\code\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\schd.o --omf_browse .\output\schd.crf --depend .\output\schd.d)
-I (..\APP\inc\schd.h)(0x57F60B4A)
-I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
-F (..\app\src\GlobalVar.c)(0x5A0AD63B)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\APP\inc -I..\Lib\STM32_ETH_Driver\inc-I E:\Co_lander\gate_control\colander.lockcontrol\code\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\globalvar.o --omf_browse .\output\globalvar.crf --depend .\output\globalvar.d)
-I (..\APP\inc\GlobalVar.h)(0x5A0AD5D1)
+I (D:\Developer tools\mdk5\ARM\ARMCC\include\string.h)(0x5475F300)
+I (..\app\inc\Globalvar.h)(0x5A0AD5D1)
+F (..\drivers\src\button.c)(0x5AC46CC4)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\button.o --omf_browse .\output\button.crf --depend .\output\button.d)
+I (..\Drivers\inc\button.h)(0x5AC44A0B)
 I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
 I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
 I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
 I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
-I (..\user\stm32f10x_conf.h)(0x5A0AD471)
+I (..\user\stm32f10x_conf.h)(0x5AC443F4)
 I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_flash.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
 I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
 I (..\Lib\inc\stm32f10x_usart.h)(0x56EC3142)
 I (..\Lib\inc\misc.h)(0x56EC3142)
-I (..\APP\inc\schd.h)(0x57F60B4A)
-F (..\app\src\CRC32.c)(0x56FD0CD2)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\APP\inc -I..\Lib\STM32_ETH_Driver\inc-I E:\Co_lander\gate_control\colander.lockcontrol\code\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\crc32.o --omf_browse .\output\crc32.crf --depend .\output\crc32.d)
-I (..\APP\inc\crc32.h)(0x56FD0CD2)
+I (..\app\inc\GlobalVar.h)(0x5A0AD5D1)
+F (..\drivers\src\flash.c)(0x5AC4443E)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\flash.o --omf_browse .\output\flash.crf --depend .\output\flash.d)
+I (..\Drivers\inc\flash.h)(0x5AC44427)
+I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
+I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
+I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
+I (..\user\stm32f10x_conf.h)(0x5AC443F4)
+I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_flash.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
+I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_usart.h)(0x56EC3142)
+I (..\Lib\inc\misc.h)(0x56EC3142)
+F (..\app\src\schd.c)(0x5AC44C85)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\schd.o --omf_browse .\output\schd.crf --depend .\output\schd.d)
+I (..\app\inc\schd.h)(0x5A607637)
+I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+F (..\app\src\GlobalVar.c)(0x5AC44C47)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\globalvar.o --omf_browse .\output\globalvar.crf --depend .\output\globalvar.d)
+I (..\app\inc\GlobalVar.h)(0x5A0AD5D1)
+I (..\Lib\cmsis\stm32f10x.h)(0x56EC3142)
+I (..\Lib\cmsis\core_cm3.h)(0x56EC3142)
+I (D:\Developer tools\mdk5\ARM\ARMCC\include\stdint.h)(0x5475F300)
+I (..\Lib\cmsis\system_stm32f10x.h)(0x56EC3142)
+I (..\user\stm32f10x_conf.h)(0x5AC443F4)
+I (..\Lib\inc\stm32f10x_dma.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_exti.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_flash.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_gpio.h)(0x57F9DC0D)
+I (..\Lib\inc\stm32f10x_iwdg.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_rcc.h)(0x56EC3142)
+I (..\Lib\inc\stm32f10x_usart.h)(0x56EC3142)
+I (..\Lib\inc\misc.h)(0x56EC3142)
+I (..\app\inc\schd.h)(0x5A607637)
+F (..\app\src\CRC32.c)(0x56FD0CD2)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\Lib\inc -I..\Lib\cmsis -I..\user -I..\Lib -I..\Drivers\inc -I..\Modules\aes -I..\app\inc-I E:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\project\RTE-I "D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0"-I "D:\Developer tools\mdk5\ARM\CMSIS\Include"-D__UVISION_VERSION="514" -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER -DSTM32F10X_CL-o .\output\crc32.o --omf_browse .\output\crc32.crf --depend .\output\crc32.d)
+I (..\app\inc\crc32.h)(0x56FD0CD2)

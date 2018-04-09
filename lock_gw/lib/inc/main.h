@@ -29,11 +29,13 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x.h"
-#include "stm32f107.h"
-
+	 
+/****************************** Macro Definition ******************************/
+#define LED_RUNNING_PERIOD		1000
+#define HEARTBEAT_PERIOD			60000
+	 
 /* Exported function prototypes ----------------------------------------------*/
-void Time_Update(void);
-void Delay(uint32_t nCount);
+void mcu_reset(void);
 
 
 #ifdef __cplusplus

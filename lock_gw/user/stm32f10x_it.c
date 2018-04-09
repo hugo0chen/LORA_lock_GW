@@ -24,6 +24,7 @@
 #include <stm32f10x_it.h>
 #include "sx1276.h"
 #include "led.h"
+#include "button.h"
 /** @addtogroup Template_Project
   * @{
   */
@@ -140,6 +141,14 @@ void EXTI1_IRQHandler( void ){
 		EXTI_ClearITPendingBit( EXTI_Line1 );
 	}
 }
+
+void EXTI3_IRQHandler(void){
+	if ( EXTI_GetITStatus( EXTI_Line3 ) == SET ){
+		start_button_pressed_time_count();
+		EXTI_ClearITPendingBit( EXTI_Line3 );
+	}
+}
+
 
 /**
   * @brief  This function handles PPP interrupt request.

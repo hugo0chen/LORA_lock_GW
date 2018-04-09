@@ -5,6 +5,7 @@
 
 union SchdParameter {
 	void* ptr;
+	unsigned char data;
 	int intvalue;
 	float floatvalue;
 	char chars[32];

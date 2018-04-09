@@ -33,6 +33,7 @@ extern ETH_DAT_STRUCT eth_data;
 void ETH_Configuration(struct EthDefine);
 void ETH_reset(void);
 void ETH_manufacture_setting(void);
+uint8_t eth_soft_manufacture_set(void);
 void ETH_send(uint8_t*buf, uint8_t buf_len);
 int receiveDMADataFromETH( char* dmaBuf, int length );
 

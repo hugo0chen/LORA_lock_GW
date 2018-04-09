@@ -4,9 +4,27 @@
 #include <stm32f10x.h>
 #include "spi.h"
 
-#define LORA_RECNUM_MAX 256
-
-#define LORA_SEND_MAX_TIMEOUT 2000
+#define   DATARATETYPE				 2 
+//DATARATE rate
+// 0       0.3kbps,
+// 1       1.2kbps, //send max data about 2100ms 
+// 2       2.4kbps, //respond 1050ms
+// 3       4.8kbps,
+// 4       9.6kbps,
+// 5       19.2kbps,
+#if (DATARATETYPE == 0)
+	#define LORA_SEND_MAX_TIMEOUT 85000
+#elif (DATARATETYPE == 1)
+	#define LORA_SEND_MAX_TIMEOUT 2500
+#elif (DATARATETYPE == 2)
+	#define LORA_SEND_MAX_TIMEOUT 1200
+#elif (DATARATETYPE == 3)
+	#define LORA_SEND_MAX_TIMEOUT 800
+#elif (DATARATETYPE == 4)
+	#define LORA_SEND_MAX_TIMEOUT 500
+#elif (DATARATETYPE == 5)
+	#define LORA_SEND_MAX_TIMEOUT 300
+#endif
 
 #define REG_LR_FIFO                                  0x00 
  // Common settings
@@ -64,7 +82,6 @@
 #define REG_LR_AGCTHRESH1                            0x62
 #define REG_LR_AGCTHRESH2                            0x63
 #define REG_LR_AGCTHRESH3                            0x64
-
 
 #define GPIO_VARE_1                                  0X00
 #define GPIO_VARE_2                                  0X00
@@ -740,15 +757,8 @@ typedef struct{
    void (*paSwitchCmdfunc)(cmdpaType_t cmd);
 }lpCtrlTypefunc_t;
 
-typedef struct {
-	uint8_t lora_recv_data_buf[LORA_RECNUM_MAX];
-	uint8_t lora_recv_data_buf_len;
-	uint8_t lora_data_arrived ;
-	uint8_t lora_send_flag;
-	uint32_t lora_send_tickTime;
-}LORA_DATA_STRUCT;
+enum LORA_TRX_STATE {IDLE, TX, TXDONE, RX };
 
-extern LORA_DATA_STRUCT lora_data;
 
 void SX1276LoRaSetOpMode(RFMode_SET opMode);
 void SX1276LoRaFsk(Debugging_fsk_ook opMode);
@@ -767,10 +777,12 @@ void SX1276LoRaSetMobileNode(BOOL enable);
 void SX1276_LoRa_SetDataRate( uint8_t rate );
 void RF_RECEIVE (void);
 void RF_CAD_RECEIVE (void);
+void FUN_RF_SENDPACKET(uint8_t *RF_TRAN_P,uint16_t LEN);
 
 /*常用外部调用函数*/
 void SX1278_Interupt(void);
 void Lora_Init(void);
 uint8_t Lora_Send(uint8_t *p_send_buf, uint16_t len);
+uint8_t lora_send_timeout(void);
 
 #endif

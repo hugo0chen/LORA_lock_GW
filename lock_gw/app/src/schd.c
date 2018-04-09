@@ -1,6 +1,6 @@
 #include "schd.h"
 
-#define MAX_SCHD_ITEMS 32
+#define MAX_SCHD_ITEMS 6
 
 struct SchdItem {
 	uint32_t timeout_microsecond;
@@ -43,5 +43,5 @@ void Schd_Run(uint32_t current_microsecond) {
 
 			_schd_items[idx].timeout_microsecond = 0;
 		}
-	}
+	}	
 }

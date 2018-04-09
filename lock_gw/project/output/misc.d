@@ -8,6 +8,7 @@
 .\output\misc.o: ..\Lib\inc\stm32f10x_dma.h
 .\output\misc.o: ..\Lib\cmsis\stm32f10x.h
 .\output\misc.o: ..\Lib\inc\stm32f10x_exti.h
+.\output\misc.o: ..\Lib\inc\stm32f10x_flash.h
 .\output\misc.o: ..\Lib\inc\stm32f10x_gpio.h
 .\output\misc.o: ..\Lib\inc\stm32f10x_iwdg.h
 .\output\misc.o: ..\Lib\inc\stm32f10x_rcc.h

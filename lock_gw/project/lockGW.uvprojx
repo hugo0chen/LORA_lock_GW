@@ -365,7 +365,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER, STM32F10X_CL</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Lib\inc;..\Lib\cmsis;..\user;..\Lib;..\Drivers\inc;..\APP\inc;..\Lib\STM32_ETH_Driver\inc</IncludePath>
+              <IncludePath>..\Lib\inc;..\Lib\cmsis;..\user;..\Lib;..\Drivers\inc;..\Modules\aes;..\app\inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -433,6 +433,21 @@
               <FileType>1</FileType>
               <FilePath>..\user\process.c</FilePath>
             </File>
+            <File>
+              <FileName>aes.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Modules\aes\aes.c</FilePath>
+            </File>
+            <File>
+              <FileName>lora_com.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\lora_com.c</FilePath>
+            </File>
+            <File>
+              <FileName>temp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\user\temp.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -483,6 +498,11 @@
               <FileType>1</FileType>
               <FilePath>..\lib\src\stm32f10x_iwdg.c</FilePath>
             </File>
+            <File>
+              <FileName>stm32f10x_flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\lib\src\stm32f10x_flash.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -527,6 +547,16 @@
               <FileName>Ethernet.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\drivers\src\Ethernet.c</FilePath>
+            </File>
+            <File>
+              <FileName>button.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\drivers\src\button.c</FilePath>
+            </File>
+            <File>
+              <FileName>flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\drivers\src\flash.c</FilePath>
             </File>
           </Files>
         </Group>

@@ -555,11 +555,11 @@ ARM Macro Assembler    Page 9
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
 ork --depend=.\output\startup_stm32f10x_cl.d -o.\output\startup_stm32f10x_cl.o 
--IE:\Co_lander\gate_control\colander.lockcontrol\code\lock_gw\project\RTE -I"D:
-\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0" -I"D:\Developer tools\
-mdk5\ARM\CMSIS\Include" --predefine="__MICROLIB SETA 1" --predefine="__UVISION_
-VERSION SETA 514" --predefine="STM32F10X_CL SETA 1" --list=.\startup_stm32f10x_
-cl.lst ..\lib\startup\arm\startup_stm32f10x_cl.s
+-IE:\Co_lander\gate_control\colander_lockcontrol\code\LORA_lock_GW\lock_gw\proj
+ect\RTE -I"D:\Developer tools\mdk5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0" -I"D:\Dev
+eloper tools\mdk5\ARM\CMSIS\Include" --predefine="__MICROLIB SETA 1" --predefin
+e="__UVISION_VERSION SETA 514" --predefine="STM32F10X_CL SETA 1" --list=.\start
+up_stm32f10x_cl.lst ..\lib\startup\arm\startup_stm32f10x_cl.s
 
 
 

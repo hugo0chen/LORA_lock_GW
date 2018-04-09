@@ -9,6 +9,7 @@
 .\output\led.o: ..\Lib\inc\stm32f10x_dma.h
 .\output\led.o: ..\Lib\cmsis\stm32f10x.h
 .\output\led.o: ..\Lib\inc\stm32f10x_exti.h
+.\output\led.o: ..\Lib\inc\stm32f10x_flash.h
 .\output\led.o: ..\Lib\inc\stm32f10x_gpio.h
 .\output\led.o: ..\Lib\inc\stm32f10x_iwdg.h
 .\output\led.o: ..\Lib\inc\stm32f10x_rcc.h

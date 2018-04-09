@@ -7,6 +7,7 @@
 .\output\delay.o: ..\Lib\inc\stm32f10x_dma.h
 .\output\delay.o: ..\Lib\cmsis\stm32f10x.h
 .\output\delay.o: ..\Lib\inc\stm32f10x_exti.h
+.\output\delay.o: ..\Lib\inc\stm32f10x_flash.h
 .\output\delay.o: ..\Lib\inc\stm32f10x_gpio.h
 .\output\delay.o: ..\Lib\inc\stm32f10x_iwdg.h
 .\output\delay.o: ..\Lib\inc\stm32f10x_rcc.h

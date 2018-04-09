@@ -8,37 +8,22 @@
 #include "driversInit.h"
 #include "ethernet.h"
 #include "process.h"
-
+#include "aes.h"
+#include "main.h"
+#include "lora_com.h"
+#include "temp.h"
+#include "button.h"
+#include "flash.h"
 /****************************** Type Definition ******************************/
-enum FsmStatus {
-		POWER_ON,
-		CONFIG,
-    WORKING    
-};
-
-/****************************** Macro Definition ******************************/
-#define LED_RUNNING_PERIOD		1000
 
 /****************************** Function Declaration ******************************/
-static void initDrivers(void);
-static void flash_running_led(void );
-static void fsm( void);
+void initDrivers(void);
+static uint8_t flash_running_led(void );
 
 /****************************** Variable Declaration ******************************/
-enum FsmStatus	_fsm_status	 = WORKING;
-
-int main( void ){             
-	initDrivers();
-	
-	printf("lock gateway starting");
-	ETH_send( "lock gateway starting", sizeof("lock gateway starting"));	
-	
-	while ( 1 ){
-		feed_watchdog();
-		flash_running_led();
-
-	  fsm();
-	}
+void feed_watchdog(void) {
+	//Feed Dog
+	IWDG->KR = 0XAAAA;
 }
 
 void initDrivers(void){
@@ -53,13 +38,14 @@ void initDrivers(void){
 	init_lora();
 	init_eth();
 	init_wtd();
+	init_button();
 	__enable_irq();
 }    
 
-void flash_running_led(){
+uint8_t flash_running_led(void){
 	static uint8_t	ledStatus	= 0;
 	static uint32_t runningTick	= 0;
-    
+
 	if ( timeout( runningTick, LED_RUNNING_PERIOD ) ){		
 		if ( ledStatus == 0 ){
 			LED_ON( LED_NO_0 );
@@ -69,43 +55,68 @@ void flash_running_led(){
 			ledStatus = 0;
 		}
 		runningTick = local_ticktime();
+		return 1;
 	}
+	return 0;
 }
-//void lora_send_test(void){
-//	static uint32_t sentTick	= 0;
-//
-//	lora_data.lora_recv_data_buf_len = 10;
-//	memset(lora_data.lora_recv_data_buf, 'A', lora_data.lora_recv_data_buf_len);     
-//	if ( timeout( sentTick, 5000 ) ){		
-//		_usart_sendMultiBytes(USART1, "LORA sending", sizeof("LORA sending"));
-//		_usart_sendMultiBytes(USART1, lora_data.lora_recv_data_buf, lora_data.lora_recv_data_buf_len);
-//		Lora_Send(lora_data.lora_recv_data_buf, lora_data.lora_recv_data_buf_len);
-//		sentTick = local_ticktime();
-//	}
-//}
 
-void fsm( void ){	
-	switch ( _fsm_status ){
-		case POWER_ON: {
-				//todo 检测TCP建立连接的引脚，引脚拉低，tcp成功
-				break;
-		}
-		case CONFIG: {
-				//todo	
-				break;
-		}
-		case WORKING: {
-				if(eth_data.Eth_data_arrived){				
-					process_data_from_server(eth_data.dataBufferFromETH, eth_data.dataBufferFromETH_len);
-					eth_data.Eth_data_arrived = 0;
-				}
-				if(lora_data.lora_data_arrived){
-					process_data_from_node(lora_data.lora_recv_data_buf, lora_data.lora_recv_data_buf_len);
-					lora_data.lora_data_arrived = 0;
-				}
-				break;
-		}
-		default: 
-			break;
+void heart_beat(void){
+	static uint32_t heartTick = 0;
+	uint8_t data[] = {0x5A, 0x5A, 0x0A, 0xFF, 0xFF, 0xFF, 0xFF, 0x52, 0x00, 0x00, 0x04, 0x58};
+	
+	if(timeout(heartTick, HEARTBEAT_PERIOD)){
+		ETH_send(data, sizeof(data));
+		heartTick = local_ticktime();
 	}
 }
+
+void mcu_reset(void){	
+	__disable_fault_irq(); 
+	NVIC_SystemReset();
+}
+
+int main( void ){
+	uint16_t temp_flash_flag[2] = {0};
+	
+	initDrivers();	
+
+	getHalfWordData(USER_FLASH_START_ADDR, temp_flash_flag,2 );
+	if(temp_flash_flag[0] == 1){
+		temp_flash_flag[0] = 0;
+		temp_flash_flag[1] = 0;	
+		putHalfWordData(USER_FLASH_START_ADDR, temp_flash_flag, 2);
+		eth_soft_manufacture_set();
+	}
+
+	while (1){
+		flash_running_led();
+		heart_beat();
+		feed_watchdog();
+		lora_com_fsm(0);
+		
+		get_button_value();
+	  switch(button.type){
+			case LONG_PRESSED:
+				temp_flash_flag[0] = 1;
+				temp_flash_flag[1] = 1;						
+				putHalfWordData(USER_FLASH_START_ADDR, temp_flash_flag, 2);		
+				button.type = NO_PRESSED;
+				mcu_reset();				
+				break;
+			case SHORT_PRESSED:
+				button.type = NO_PRESSED;		
+				ETH_reset();				
+				mcu_reset();				
+				break;
+			default:
+				break;		
+		}
+		
+		if(eth_data.Eth_data_arrived){
+			process_data_from_server(eth_data.dataBufferFromETH, eth_data.dataBufferFromETH_len);
+			eth_data.Eth_data_arrived = 0;
+		}				
+	}
+}
+
+// -----		end			-------

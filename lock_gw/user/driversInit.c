@@ -14,6 +14,7 @@ uint16_t BOARD_NVIC_Init(uint16_t priority_group){
   NVIC_PriorityGroupConfig(priority_group);//设置优先级配置的模式，详情请阅读原材料中的文章
 	return 0;
 }
+
 void RCC_Configuration(){
 	RCC_APB2PeriphClockCmd( RCC_APB2Periph_GPIOA | RCC_APB2Periph_GPIOB | RCC_APB2Periph_GPIOC | RCC_APB2Periph_AFIO, ENABLE );
 }
@@ -34,7 +35,7 @@ void init_sys_tick(){
 void init_wtd(void){
  	IWDG_WriteAccessCmd(IWDG_WriteAccess_Enable);  
 	IWDG_SetPrescaler(IWDG_Prescaler_256);  
-	IWDG_SetReload(0x00FF);  								
+	IWDG_SetReload(0x0FFF);  								
 	IWDG_ReloadCounter();  
 	IWDG_Enable(); 	
 }
